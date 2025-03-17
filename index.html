@@ -1,20 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso Tailwind</title>
-  </head>
-  <body>
-    <header class="bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200">
-      <nav class="container mx-auto flex items-center justify-between py-4">
-        <a href="#" class="text-lg font-bold">LOGO</a>
-        <ul class="flex space-x-4">
-          <li class="hover:text-gray-200"><a href="#">Inicio</a></li>
-          <li class="hover:text-gray-200"><a href="#">Servicios</a></li>
-          <li class="hover:text-gray-200"><a href="#">Acerca</a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./main.js"></script>
+  <title>Curso Tailwind</title>
+</head>
+
+<body>
+  <!-- Navegación -->
+  <header class="bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4">
+      <a href="#" class="text-lg font-bold">LOGO</a>
+      <ul class="flex space-x-4">
+        <li class="hover:text-gray-200"><a href="#">Inicio</a></li>
+        <li class="hover:text-gray-200"><a href="#">Servicios</a></li>
+        <li class="hover:text-gray-200"><a href="#">Acerca</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Sección 1 -->
+  <section class="bg-white flex display-columns">
+    <article class="relative isolate px-6 pt-12 lg:px-8">
+      <div class="absolute inset-x-0 top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div
+            class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span
+                class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Data to enrich your
+            online business</h1>
+          <p class="mt-8 text-lg font-medium t  ext-pretty text-gray-500 sm:text-xl/8">Anim aute id magna aliqua ad ad
+            non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <button href="#"
+              class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Empecemos</button>
+            <button href="#"
+              class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Ver
+              más</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true">
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+    </article>
+    <!-- Colección de imágenes //  -->
+    <article class="bg-gray-600">
+      <div class="overflow-hidden mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl py-20 sm:py-24 lg:max-w-none lg:py-32">
+          <h2 class="py-3 text-2xl font-bold text-gray-900">Collections</h2>
+          <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            <div class="group relative">
+              <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-01.jpg"
+                alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square">
+              <h3 class="mt-6 text-sm text-gray-500">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Desk and Office
+                </a>
+              </h3>
+              <p class="text-base font-semibold text-gray-900">Work from home accessories</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</body>
+
 </html>
